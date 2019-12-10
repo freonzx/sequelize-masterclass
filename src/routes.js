@@ -10,8 +10,8 @@ const routes = express.Router()
 routes.get('/users', UserController.index)
 routes.post('/users', UserController.store)
 
-routes.post('/users/:user_id/addresses', AddressController.store)
-routes.get('/users/:user_id/addresses', AddressController.index)
+routes.post('/users/:user_id/adresses', AddressController.store)
+routes.get('/users/:user_id/adresses', AddressController.index)
 
 routes.post('/users/:user_id/techs', TechController.store)
 routes.get('/users/:user_id/techs', TechController.index)
